@@ -6,9 +6,10 @@ import corsOptions from "./config/cors.js";
 
 // routes
 import connectionRoutes from "./routes/connection.js";
+import districtRoutes from "./routes/district.js";
+
 /*
 import countyRoutes from "./routes/county.js";
-import districtRoutes from "./routes/district.js";
 import parishRoutes from "./routes/parish.js";
 import propertyGoalRoutes from "./routes/property_goal.js";
 import propertyStatusRoutes from "./routes/property_status.js";
@@ -24,10 +25,10 @@ app.use(cors(corsOptions));
 
 // routes
 app.use("/connection-check", connectionRoutes);
+app.use("/district", districtRoutes);
 
 /*
 app.use("/county", countyRoutes);
-app.use("/district", districtRoutes);
 app.use("/parish", parishRoutes);
 app.use("/property-goal", propertyGoalRoutes);
 app.use("/property-status", propertyStatusRoutes);
